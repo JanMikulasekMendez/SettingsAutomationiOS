@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SettingsTestClass" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-01-06T16:53:16" hostname="Jan-MacBook-Air.local" time="21.019">
+  <properties/>
+  <testcase name="testA" classname="SettingsTestClass" time="4.3"/>
+  <testcase name="testB" classname="SettingsTestClass" time="13.333"/>
+  <testcase name="testC" classname="SettingsTestClass" time="3.386"/>
+  <system-out><![CDATA[INFO - something Element is Not Present
+]]></system-out>
+  <system-err><![CDATA[led 06, 2022 5:53:19 ODP. io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+led 06, 2022 5:53:23 ODP. io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+led 06, 2022 5:53:37 ODP. io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
