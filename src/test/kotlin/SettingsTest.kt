@@ -1,3 +1,4 @@
+import com.google.common.collect.ImmutableMap
 import io.appium.java_client.MobileElement
 import io.appium.java_client.ios.IOSDriver
 import junit.framework.TestCase.assertEquals
@@ -76,7 +77,7 @@ class SettingsTestClass {
         el5.click()
         val el6 =
             driver!!.findElementByXPath("//XCUIElementTypeSwitch[@name=\"Period shortcut\"]") as MobileElement
-        el6.click();
+        el6.click()
         val el7 = driver!!.findElementByXPath("//XCUIElementTypeSwitch[@name=\"Enable Dictation\"]") as MobileElement
         el7.click()
         driver!!.switchTo().alert().accept()
@@ -91,12 +92,10 @@ class SettingsTestClass {
         el10.click()
 
         fun el9a() {
-            val elementID = "something"
             val wait = WebDriverWait(driver, 2)
             try {
                 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//XCUIElementTypeSwitch[@name=\"Delete Slide-to-Type by Word\"]")))
             } catch (e: java.lang.Exception) {
-                System.out.println("INFO - $elementID Element is Not Present")
                 return
             }
             val el9a =
@@ -105,7 +104,7 @@ class SettingsTestClass {
         }
         el9a()
 
-        driver!!.navigate().back();
+        driver!!.navigate().back()
 
         assertEquals(1, 1)
     }
@@ -114,9 +113,13 @@ class SettingsTestClass {
     fun testC() {
         val el1 = driver!!.findElementByAccessibilityId("Dictionary") as MobileElement
         el1.click()
-
     }
 
+    @Test
+    fun testD() {
+        val myList = driver!!.executeScript("mobile: source", ImmutableMap.of("format", "description"))
+        System.out.println(myList)
+    }
 
     companion object {
         private var firstTest: Boolean = true

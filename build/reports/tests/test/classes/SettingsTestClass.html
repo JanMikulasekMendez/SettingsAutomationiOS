@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">3</div>
+<div class="counter">4</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">21.019s</div>
+<div class="counter">24.478s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,17 +82,22 @@
 </thead>
 <tr>
 <td class="success">testA</td>
-<td class="success">4.300s</td>
+<td class="success">7.261s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testB</td>
-<td class="success">13.333s</td>
+<td class="success">11.055s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testC</td>
-<td class="success">3.386s</td>
+<td class="success">2.610s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testD</td>
+<td class="success">3.552s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -100,18 +105,284 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>INFO - something Element is Not Present
+<pre>Attributes: Window (Main), 0x7fa9f46a8090, {{0.0, 0.0}, {414.0, 896.0}}
+Element subtree:
+ →Window (Main), 0x7fa9f46a8090, {{0.0, 0.0}, {414.0, 896.0}}
+    Other, 0x7fa9f46e4760, {{0.0, 0.0}, {414.0, 896.0}}
+      Other, 0x7fa9f46e6550, {{0.0, 0.0}, {414.0, 896.0}}
+        Other, 0x7fa9f46e62b0, {{0.0, 0.0}, {414.0, 896.0}}
+          Other, 0x7fa9f46e63c0, {{0.0, 0.0}, {414.0, 896.0}}
+            NavigationBar, 0x7fa9f46e6ee0, {{0.0, 48.0}, {414.0, 44.0}}, identifier: 'Dictionary'
+              Button, 0x7fa9f375ce50, {{0.0, 48.0}, {94.0, 44.0}}, label: 'General'
+              StaticText, 0x7fa9f376e7f0, {{166.0, 60.0}, {82.0, 20.5}}, label: 'Dictionary'
+            Other, 0x7fa9f376e900, {{0.0, 0.0}, {414.0, 896.0}}
+              Other, 0x7fa9f5bb0ae0, {{0.0, 0.0}, {414.0, 896.0}}
+                Other, 0x7fa9f32c1ef0, {{0.0, 0.0}, {414.0, 896.0}}
+                  Other, 0x7fa9f5b5ec20, {{0.0, 0.0}, {414.0, 896.0}}
+                    Other, 0x7fa9f376ea10, {{0.0, 0.0}, {414.0, 896.0}}
+                      Other, 0x7fa9f46e6a60, {{0.0, 0.0}, {414.0, 896.0}}
+                        Table, 0x7fa9f46e6b70, {{0.0, 0.0}, {414.0, 896.0}}
+                          Cell, 0x7fa9f376eb20, {{20.0, 127.0}, {374.0, 58.0}}, label: 'English (US)', value: New Oxford America..., Selected
+                            Image, 0x7fa9f376ec30, {{42.5, 147.0}, {19.0, 18.0}}, label: 'selected'
+                            Other, 0x7fa9f376ed40, {{64.0, 184.5}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f376ee50, {{76.5, 136.0}, {94.0, 20.5}}, identifier: '1', label: 'English (US)'
+                            StaticText, 0x7fa9f376ef60, {{76.5, 159.5}, {185.0, 14.5}}, label: 'New Oxford American Dictionary'
+                          Cell, 0x7fa9f3798180, {{20.0, 185.0}, {374.0, 58.0}}, label: 'English (US)', value: Oxford American Wr..., Selected
+                            Image, 0x7fa9f3798290, {{42.5, 205.0}, {19.0, 18.0}}, label: 'selected'
+                            Other, 0x7fa9f46e6c80, {{64.0, 242.5}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f46e6d90, {{76.5, 194.0}, {94.0, 20.5}}, identifier: '2', label: 'English (US)'
+                            StaticText, 0x7fa9f46e6ff0, {{76.5, 217.5}, {206.0, 14.5}}, label: 'Oxford American Writer’s Thesaurus'
+                          Cell, 0x7fa9f5b5ed30, {{20.0, 243.0}, {374.0, 44.0}}, label: 'Apple Dictionary'
+                            Other, 0x7fa9f5b5ee40, {{64.0, 286.5}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f5b5ef50, {{76.5, 255.0}, {126.0, 20.5}}, identifier: '3', label: 'Apple Dictionary'
+                          Cell, 0x7fa9f5b5f060, {{20.0, 287.0}, {374.0, 58.0}}, label: 'Arabic-English', value: Oxford Arabic Dict...
+                            Other, 0x7fa9f5bfb1d0, {{64.0, 344.5}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f5bfb2e0, {{76.5, 296.0}, {111.5, 20.5}}, identifier: '4', label: 'Arabic-English'
+                            StaticText, 0x7fa9f37983a0, {{76.5, 319.5}, {293.0, 14.5}}, label: 'Oxford Arabic Dictionary - عربي-إنجليزي • إنجليزي-عربي'
+                          Cell, 0x7fa9f37984b0, {{20.0, 345.0}, {374.0, 58.0}}, label: 'Cantonese, Traditional-English', value: 英譯廣東口語詞典
+                            Other, 0x7fa9f37985c0, {{64.0, 402.5}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37986d0, {{76.5, 354.0}, {233.0, 20.5}}, identifier: '5', label: 'Cantonese, Traditional-English'
+                            StaticText, 0x7fa9f37987e0, {{76.5, 377.5}, {98.5, 14.5}}, label: '英譯廣東口語詞典'
+                          Cell, 0x7fa9f37988f0, {{20.0, 403.0}, {374.0, 58.0}}, label: 'Chinese, Simplified', value: 汉语成语词典, Selected
+                            Image, 0x7fa9f3798a00, {{42.5, 423.0}, {19.0, 18.0}}, label: 'selected'
+                            Other, 0x7fa9f3798b10, {{64.0, 460.5}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f3798c20, {{76.5, 412.0}, {145.5, 20.5}}, identifier: '6', label: 'Chinese, Simplified'
+                            StaticText, 0x7fa9f3798d30, {{76.5, 435.5}, {74.0, 14.5}}, label: '汉语成语词典'
+                          Cell, 0x7fa9f3798e40, {{20.0, 461.0}, {374.0, 58.0}}, label: 'Chinese, Simplified', value: 现代汉语规范词典
+                            Other, 0x7fa9f3798f50, {{64.0, 518.5}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f3799060, {{76.5, 470.0}, {145.5, 20.5}}, identifier: '7', label: 'Chinese, Simplified'
+                            StaticText, 0x7fa9f3799170, {{76.5, 493.5}, {98.5, 14.5}}, label: '现代汉语规范词典'
+                          Cell, 0x7fa9f3799280, {{20.0, 519.0}, {374.0, 58.0}}, label: 'Chinese, Simplified', value: 现代汉语同义词典
+                            Other, 0x7fa9f3799390, {{64.0, 576.5}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37994a0, {{76.5, 528.0}, {145.5, 20.5}}, identifier: '8', label: 'Chinese, Simplified'
+                            StaticText, 0x7fa9f37995b0, {{76.5, 551.5}, {98.5, 14.5}}, label: '现代汉语同义词典'
+                          Cell, 0x7fa9f37996c0, {{20.0, 577.0}, {374.0, 58.0}}, label: 'Chinese, Simplified-English', value: 牛津英汉汉英词典
+                            Other, 0x7fa9f37997d0, {{64.0, 634.5}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37998e0, {{76.5, 586.0}, {208.0, 20.5}}, identifier: '9', label: 'Chinese, Simplified-English'
+                            StaticText, 0x7fa9f37999f0, {{76.5, 609.5}, {98.5, 14.5}}, label: '牛津英汉汉英词典'
+                          Cell, 0x7fa9f3799b00, {{20.0, 635.0}, {374.0, 58.0}}, label: 'Chinese, Traditional', value: 五南國語活用辭典
+                            Other, 0x7fa9f3799c10, {{64.0, 692.5}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f3799d20, {{76.5, 644.0}, {150.0, 20.5}}, identifier: '10', label: 'Chinese, Traditional'
+                            StaticText, 0x7fa9f3799e30, {{76.5, 667.5}, {98.5, 14.5}}, label: '五南國語活用辭典'
+                          Cell, 0x7fa9f3799f40, {{20.0, 693.0}, {374.0, 58.0}}, label: 'Chinese, Traditional (Hong Kong)', value: 商務新詞典（全新版）
+                            Other, 0x7fa9f379a050, {{64.0, 750.5}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379a160, {{76.5, 702.0}, {251.5, 20.5}}, identifier: '11', label: 'Chinese, Traditional (Hong Kong)'
+                            StaticText, 0x7fa9f379a270, {{76.5, 725.5}, {123.0, 14.5}}, label: '商務新詞典（全新版）'
+                          Cell, 0x7fa9f379a380, {{20.0, 751.0}, {374.0, 58.0}}, label: 'Chinese, Traditional (Hong Kong)-English', value: 漢英對照成語詞典
+                            Other, 0x7fa9f379a490, {{64.0, 808.5}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379a5a0, {{76.5, 760.0}, {297.5, 20.5}}, identifier: '12', label: 'Chinese, Traditional (Hong Kong)-English'
+                            StaticText, 0x7fa9f379a6b0, {{76.5, 783.5}, {98.5, 14.5}}, label: '漢英對照成語詞典'
+                          Cell, 0x7fa9f379a7c0, {{20.0, 809.0}, {374.0, 58.0}}, label: 'Chinese, Traditional-English', value: 譯典通英漢雙向字典
+                            Other, 0x7fa9f379a8d0, {{64.0, 866.5}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379a9e0, {{76.5, 818.0}, {212.5, 20.5}}, identifier: '13', label: 'Chinese, Traditional-English'
+                            StaticText, 0x7fa9f379aaf0, {{76.5, 841.5}, {110.5, 14.5}}, label: '譯典通英漢雙向字典'
+                          Cell, 0x7fa9f379ac00, {{20.0, 867.0}, {374.0, 58.0}}, label: 'Danish', value: Politikens Nudansk...
+                            Other, 0x7fa9f379ad10, {{64.0, 924.5}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379ae20, {{76.5, 876.0}, {52.5, 20.5}}, identifier: '14', label: 'Danish'
+                            StaticText, 0x7fa9f379af30, {{76.5, 899.5}, {153.5, 14.5}}, label: 'Politikens Nudansk Ordbog'
+                          Cell, 0x7fa9f379b040, {{20.0, 925.0}, {374.0, 58.0}}, label: 'Dutch', value: Prisma woordenboek...
+                            Other, 0x7fa9f379b150, {{64.0, 982.5}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379b260, {{76.5, 934.0}, {46.0, 20.5}}, identifier: '15', label: 'Dutch'
+                            StaticText, 0x7fa9f379b370, {{76.5, 957.5}, {187.0, 14.5}}, label: 'Prisma woordenboek Nederlands'
+                          Cell, 0x7fa9f379b480, {{20.0, 983.0}, {374.0, 58.0}}, label: 'Dutch-English', value: Prisma Handwoorden...
+                            Other, 0x7fa9f379b590, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379b6a0, {{0.0, 92.0}, {108.5, 20.5}}, identifier: '16', label: 'Dutch-English'
+                            StaticText, 0x7fa9f379b7b0, {{0.0, 92.0}, {189.5, 14.5}}, label: 'Prisma Handwoordenboek Engels'
+                          Cell, 0x7fa9f379b8c0, {{20.0, 1041.0}, {374.0, 58.0}}, label: 'English (UK)', value: Oxford Thesaurus o...
+                            Other, 0x7fa9f379b9d0, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379bae0, {{0.0, 92.0}, {94.5, 20.5}}, identifier: '17', label: 'English (UK)'
+                            StaticText, 0x7fa9f379bbf0, {{0.0, 92.0}, {160.5, 14.5}}, label: 'Oxford Thesaurus of English'
+                          Cell, 0x7fa9f379bd00, {{20.0, 1099.0}, {374.0, 58.0}}, label: 'English (UK)', value: Oxford Dictionary ...
+                            Other, 0x7fa9f379be10, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379bf20, {{0.0, 92.0}, {94.5, 20.5}}, identifier: '18', label: 'English (UK)'
+                            StaticText, 0x7fa9f379c030, {{0.0, 92.0}, {159.0, 14.5}}, label: 'Oxford Dictionary of English'
+                          Cell, 0x7fa9f379c140, {{20.0, 1157.0}, {374.0, 58.0}}, label: 'French', value: Multidictionnaire ...
+                            Other, 0x7fa9f379c250, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379c360, {{0.0, 92.0}, {53.0, 20.5}}, identifier: '19', label: 'French'
+                            StaticText, 0x7fa9f379c470, {{0.0, 92.0}, {221.5, 14.5}}, label: 'Multidictionnaire de la langue française'
+                          Cell, 0x7fa9f379c580, {{20.0, 1215.0}, {374.0, 58.0}}, label: 'French-English', value: Oxford-Hachette Fr...
+                            Other, 0x7fa9f379c690, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379c7a0, {{0.0, 92.0}, {115.0, 20.5}}, identifier: '20', label: 'French-English'
+                            StaticText, 0x7fa9f379c8b0, {{0.0, 92.0}, {199.5, 14.5}}, label: 'Oxford-Hachette French Dictionary'
+                          Cell, 0x7fa9f379c9c0, {{20.0, 1273.0}, {374.0, 58.0}}, label: 'German', value: Duden-Wissensnetz ...
+                            Other, 0x7fa9f379cad0, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379cbe0, {{0.0, 92.0}, {61.0, 20.5}}, identifier: '21', label: 'German'
+                            StaticText, 0x7fa9f379ccf0, {{0.0, 92.0}, {220.0, 14.5}}, label: 'Duden-Wissensnetz deutsche Sprache'
+                          Cell, 0x7fa9f379ce00, {{20.0, 1331.0}, {374.0, 58.0}}, label: 'German-English', value: Oxford German Dict...
+                            Other, 0x7fa9f379cf10, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379d020, {{0.0, 92.0}, {123.0, 20.5}}, identifier: '22', label: 'German-English'
+                            StaticText, 0x7fa9f379d130, {{0.0, 92.0}, {148.0, 14.5}}, label: 'Oxford German Dictionary'
+                          Cell, 0x7fa9f379d240, {{20.0, 1389.0}, {374.0, 58.0}}, label: 'German-French', value: PONS Großwörterbuc...
+                            Other, 0x7fa9f379d350, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379d460, {{0.0, 92.0}, {121.0, 20.5}}, identifier: '23', label: 'German-French'
+                            StaticText, 0x7fa9f379d570, {{0.0, 92.0}, {251.0, 14.5}}, label: 'PONS Großwörterbuch Französisch Deutsch'
+                          Cell, 0x7fa9f379d680, {{20.0, 1447.0}, {374.0, 58.0}}, label: 'Gujarati-English', value: Oxford Gujarati Di...
+                            Other, 0x7fa9f379d790, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379d8a0, {{0.0, 92.0}, {121.5, 20.5}}, identifier: '24', label: 'Gujarati-English'
+                            StaticText, 0x7fa9f379d9b0, {{0.0, 92.0}, {297.5, 14.5}}, label: 'Oxford Gujarati Dictionaries - ગુજરાતી-અંગ્રેજી • અંગ્રેજી-ગુજરાતી'
+                          Cell, 0x7fa9f379dac0, {{20.0, 1505.0}, {374.0, 58.0}}, label: 'Hebrew', value: מילון אבן-שושן מחו...
+                            Other, 0x7fa9f379dbd0, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379dce0, {{0.0, 92.0}, {59.5, 20.5}}, identifier: '25', label: 'Hebrew'
+                            StaticText, 0x7fa9f379ddf0, {{0.0, 92.0}, {218.0, 14.5}}, label: 'מילון אבן-שושן מחודש ומותאם לשנות האלפיים'
+                          Cell, 0x7fa9f379df00, {{20.0, 1563.0}, {374.0, 58.0}}, label: 'Hindi', value: राजपाल हिन्दी शब्द...
+                            Other, 0x7fa9f379e010, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379e120, {{0.0, 92.0}, {39.5, 20.5}}, identifier: '26', label: 'Hindi'
+                            StaticText, 0x7fa9f379e230, {{0.0, 92.0}, {105.0, 14.5}}, label: 'राजपाल हिन्दी शब्दकोश'
+                          Cell, 0x7fa9f379e340, {{20.0, 1621.0}, {374.0, 58.0}}, label: 'Hindi-English', value: Oxford Hindi Dicti...
+                            Other, 0x7fa9f379e450, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379e560, {{0.0, 92.0}, {102.0, 20.5}}, identifier: '27', label: 'Hindi-English'
+                            StaticText, 0x7fa9f379e670, {{0.0, 92.0}, {277.5, 14.5}}, label: 'Oxford Hindi Dictionaries - हिन्दी-अंग्रेज़ी • अंग्रेज़ी-हिन्दी'
+                          Cell, 0x7fa9f379e8d0, {{20.0, 1679.0}, {374.0, 58.0}}, label: 'Indonesian-English', value: Oxford Study Indon...
+                            Other, 0x7fa9f379e9e0, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379eaf0, {{0.0, 92.0}, {145.5, 20.5}}, identifier: '28', label: 'Indonesian-English'
+                            StaticText, 0x7fa9f379ec00, {{0.0, 92.0}, {297.5, 14.5}}, label: 'Oxford Study Indonesian Dictionary - Inggris-Indonesia • Indonesia-Inggris'
+                          Cell, 0x7fa9f379ed10, {{20.0, 1737.0}, {374.0, 58.0}}, label: 'Italian', value: Dizionario italian...
+                            Other, 0x7fa9f379ee20, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379ef30, {{0.0, 92.0}, {45.0, 20.5}}, identifier: '29', label: 'Italian'
+                            StaticText, 0x7fa9f379f040, {{0.0, 92.0}, {297.5, 14.5}}, label: 'Dizionario italiano da un affiliato di Oxford University Press'
+                          Cell, 0x7fa9f379f150, {{20.0, 1795.0}, {374.0, 58.0}}, label: 'Italian-English', value: Oxford Paravia Il ...
+                            Other, 0x7fa9f379f260, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379f370, {{0.0, 92.0}, {107.5, 20.5}}, identifier: '30', label: 'Italian-English'
+                            StaticText, 0x7fa9f379f480, {{0.0, 92.0}, {297.5, 14.5}}, label: 'Oxford Paravia Il Dizionario inglese - italiano/italiano - inglese'
+                          Cell, 0x7fa9f379f590, {{20.0, 1853.0}, {374.0, 58.0}}, label: 'Japanese', value: スーパー大辞林
+                            Other, 0x7fa9f379f6a0, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379f7b0, {{0.0, 92.0}, {73.5, 20.5}}, identifier: '31', label: 'Japanese'
+                            StaticText, 0x7fa9f379f8c0, {{0.0, 92.0}, {86.0, 14.5}}, label: 'スーパー大辞林'
+                          Cell, 0x7fa9f379f9d0, {{20.0, 1911.0}, {374.0, 58.0}}, label: 'Japanese-Chinese, Simplified', value: 超級クラウン中日辞典 / クラウン日...
+                            Other, 0x7fa9f379fae0, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f379fbf0, {{0.0, 92.0}, {226.5, 20.5}}, identifier: '32', label: 'Japanese-Chinese, Simplified'
+                            StaticText, 0x7fa9f379fd00, {{0.0, 92.0}, {231.0, 14.5}}, label: '超級クラウン中日辞典 / クラウン日中辞典'
+                          Cell, 0x7fa9f379fe10, {{20.0, 1969.0}, {374.0, 58.0}}, label: 'Japanese-English', value: ウィズダム英和辞典 / ウィズダム和...
+                            Other, 0x7fa9f379ff20, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37a0030, {{0.0, 92.0}, {135.5, 20.5}}, identifier: '33', label: 'Japanese-English'
+                            StaticText, 0x7fa9f37a0140, {{0.0, 92.0}, {231.0, 14.5}}, label: 'ウィズダム英和辞典 / ウィズダム和英辞典'
+                          Cell, 0x7fa9f37a0250, {{20.0, 2027.0}, {374.0, 58.0}}, label: 'Korean', value: 뉴에이스 국어사전
+                            Other, 0x7fa9f37a0360, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37a0470, {{0.0, 92.0}, {53.5, 20.5}}, identifier: '34', label: 'Korean'
+                            StaticText, 0x7fa9f37a0580, {{0.0, 92.0}, {86.5, 14.5}}, label: '뉴에이스 국어사전'
+                          Cell, 0x7fa9f37a0690, {{20.0, 2085.0}, {374.0, 58.0}}, label: 'Korean-English', value: 뉴에이스 영한사전 / 뉴에이스 한...
+                            Other, 0x7fa9f37a07a0, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37a08b0, {{0.0, 92.0}, {116.0, 20.5}}, identifier: '35', label: 'Korean-English'
+                            StaticText, 0x7fa9f37a09c0, {{0.0, 92.0}, {183.5, 14.5}}, label: '뉴에이스 영한사전 / 뉴에이스 한영사전'
+                          Cell, 0x7fa9f37a0ad0, {{20.0, 2143.0}, {374.0, 58.0}}, label: 'Norwegian', value: Norsk Ordbok
+                            Other, 0x7fa9f37a0be0, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37a0cf0, {{0.0, 92.0}, {82.0, 20.5}}, identifier: '36', label: 'Norwegian'
+                            StaticText, 0x7fa9f37a0e00, {{0.0, 92.0}, {79.0, 14.5}}, label: 'Norsk Ordbok'
+                          Cell, 0x7fa9f37a0f10, {{20.0, 2201.0}, {374.0, 58.0}}, label: 'Polish-English', value: Oxford PWN Polish-...
+                            Other, 0x7fa9f37a1020, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37a1130, {{0.0, 92.0}, {108.0, 20.5}}, identifier: '37', label: 'Polish-English'
+                            StaticText, 0x7fa9f37a1240, {{0.0, 92.0}, {297.5, 14.5}}, label: 'Oxford PWN Polish-English Dictionary / Wielki słownik polsko-angielski'
+                          Cell, 0x7fa9f37a1350, {{20.0, 2259.0}, {374.0, 58.0}}, label: 'Portuguese', value: Dicionário de Port...
+                            Other, 0x7fa9f37a1460, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37a1570, {{0.0, 92.0}, {88.0, 20.5}}, identifier: '38', label: 'Portuguese'
+                            StaticText, 0x7fa9f37a1680, {{0.0, 92.0}, {297.5, 14.5}}, label: 'Dicionário de Português licenciado para Oxford University Press'
+                          Cell, 0x7fa9f37a1790, {{20.0, 2317.0}, {374.0, 58.0}}, label: 'Portuguese-English', value: Oxford Portuguese ...
+                            Other, 0x7fa9f37a18a0, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37a19b0, {{0.0, 92.0}, {150.0, 20.5}}, identifier: '39', label: 'Portuguese-English'
+                            StaticText, 0x7fa9f37a1ac0, {{0.0, 92.0}, {297.5, 14.5}}, label: 'Oxford Portuguese Dictionary - Português-Inglês • Inglês-Português'
+                          Cell, 0x7fa9f37a1bd0, {{20.0, 2375.0}, {374.0, 58.0}}, label: 'Russian', value: Толковый словарь р...
+                            Other, 0x7fa9f37a1ce0, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37a1df0, {{0.0, 92.0}, {59.5, 20.5}}, identifier: '40', label: 'Russian'
+                            StaticText, 0x7fa9f37a1f00, {{0.0, 92.0}, {203.0, 14.5}}, label: 'Толковый словарь русского языка'
+                          Cell, 0x7fa9f37a2010, {{20.0, 2433.0}, {374.0, 58.0}}, label: 'Russian-English', value: Oxford Russian Dic...
+                            Other, 0x7fa9f37a2120, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37a2230, {{0.0, 92.0}, {122.0, 20.5}}, identifier: '41', label: 'Russian-English'
+                            StaticText, 0x7fa9f37a2340, {{0.0, 92.0}, {297.5, 14.5}}, label: 'Oxford Russian Dictionary - Русско-Английский • Англо-Русский'
+                          Cell, 0x7fa9f37a2450, {{20.0, 2491.0}, {374.0, 58.0}}, label: 'Spanish', value: Diccionario Genera...
+                            Other, 0x7fa9f37a2560, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37a2670, {{0.0, 92.0}, {61.0, 20.5}}, identifier: '42', label: 'Spanish'
+                            StaticText, 0x7fa9f37a2780, {{0.0, 92.0}, {264.5, 14.5}}, label: 'Diccionario General de la Lengua Española Vox'
+                          Cell, 0x7fa9f37a2890, {{20.0, 2549.0}, {374.0, 58.0}}, label: 'Spanish-English', value: Gran Diccionario O...
+                            Other, 0x7fa9f37a29a0, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37a2ab0, {{0.0, 92.0}, {123.0, 20.5}}, identifier: '43', label: 'Spanish-English'
+                            StaticText, 0x7fa9f37a2bc0, {{0.0, 92.0}, {297.5, 14.5}}, label: 'Gran Diccionario Oxford - Español-Inglés • Inglés-Español'
+                          Cell, 0x7fa9f379e780, {{20.0, 2607.0}, {374.0, 58.0}}, label: 'Swedish', value: NE Ordbok
+                            Other, 0x7fa9f37a2ef0, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37a3000, {{0.0, 92.0}, {64.0, 20.5}}, identifier: '44', label: 'Swedish'
+                            StaticText, 0x7fa9f37a3110, {{0.0, 92.0}, {61.5, 14.5}}, label: 'NE Ordbok'
+                          Cell, 0x7fa9f37a3220, {{20.0, 2665.0}, {374.0, 58.0}}, label: 'Tamil-English', value: Oxford Tamil Dicti...
+                            Other, 0x7fa9f37a3330, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37a3440, {{0.0, 92.0}, {102.0, 20.5}}, identifier: '45', label: 'Tamil-English'
+                            StaticText, 0x7fa9f37a3550, {{0.0, 92.0}, {297.5, 14.5}}, label: 'Oxford Tamil Dictionaries - தமிழ்-ஆங்கிலம் • ஆங்கிலம்-தமிழ்'
+                          Cell, 0x7fa9f37a3660, {{20.0, 2723.0}, {374.0, 58.0}}, label: 'Telugu-English', value: Oxford Telugu Dict...
+                            Other, 0x7fa9f37a3770, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37a3880, {{0.0, 92.0}, {113.5, 20.5}}, identifier: '46', label: 'Telugu-English'
+                            StaticText, 0x7fa9f37a3990, {{0.0, 92.0}, {297.5, 14.5}}, label: 'Oxford Telugu Dictionaries - తెలుగు-ఇంగ్లీష్ • ఇంగ్లీష్-తెలుగు'
+                          Cell, 0x7fa9f37a3aa0, {{20.0, 2781.0}, {374.0, 58.0}}, label: 'Thai', value: พจนานุกรมไทย ฉบับท...
+                            Other, 0x7fa9f37a3bb0, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37a3cc0, {{0.0, 92.0}, {33.0, 20.5}}, identifier: '47', label: 'Thai'
+                            StaticText, 0x7fa9f37a3dd0, {{0.0, 92.0}, {196.5, 14.5}}, label: 'พจนานุกรมไทย ฉบับทันสมัยและสมบูรณ์'
+                          Cell, 0x7fa9f37a3ee0, {{20.0, 2839.0}, {374.0, 58.0}}, label: 'Thai-English', value: พจนานุกรมอังกฤษ-ไท...
+                            Other, 0x7fa9f37a3ff0, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37a4100, {{0.0, 92.0}, {95.5, 20.5}}, identifier: '48', label: 'Thai-English'
+                            StaticText, 0x7fa9f37a4210, {{0.0, 92.0}, {297.5, 14.5}}, label: 'พจนานุกรมอังกฤษ-ไทย &amp; ไทย-อังกฤษ ฉบับทันสมัยและสมบูรณ์ที่สุด'
+                          Cell, 0x7fa9f37a4320, {{20.0, 2897.0}, {374.0, 58.0}}, label: 'Turkish', value: Arkadaş Türkçe Söz...
+                            Other, 0x7fa9f37a4430, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37a4540, {{0.0, 92.0}, {55.5, 20.5}}, identifier: '49', label: 'Turkish'
+                            StaticText, 0x7fa9f37a4650, {{0.0, 92.0}, {128.5, 14.5}}, label: 'Arkadaş Türkçe Sözlük'
+                          Cell, 0x7fa9f37a4760, {{20.0, 2955.0}, {374.0, 58.0}}, label: 'Urdu-English', value: Oxford Urdu Dictio...
+                            Other, 0x7fa9f37a4870, {{0.0, 92.0}, {330.0, 0.5}}
+                            StaticText, 0x7fa9f37a4980, {{0.0, 92.0}, {100.0, 20.5}}, identifier: '50', label: 'Urdu-English'
+                            StaticText, 0x7fa9f37a4a90, {{0.0, 92.0}, {281.0, 14.5}}, label: 'Oxford Urdu Dictionaries - اردو۔انگریزی • انگریزی-اردو'
+                          Cell, 0x7fa9f37a4ba0, {{20.0, 3013.0}, {374.0, 58.0}}, label: 'Vietnamese-English', value: Từ điển Lạc Việt
+                            Other, 0x7fa9f37a4cb0, {{0.0, 92.0}, {374.0, 0.5}}
+                            StaticText, 0x7fa9f37a4dc0, {{0.0, 92.0}, {152.5, 20.5}}, identifier: '51', label: 'Vietnamese-English'
+                            StaticText, 0x7fa9f37a4ed0, {{0.0, 92.0}, {91.5, 14.5}}, label: 'Từ điển Lạc Việt'
+Path to element:
+ →Application, 0x7fa9f5bb09d0, pid: 6827, label: 'Settings'
+  ↳Window (Main), 0x7fa9f46a8090, {{0.0, 0.0}, {414.0, 896.0}}
+Query chain:
+ →Find: Application 'com.apple.Preferences'
+  Output: {
+    Application, 0x7fa9f5ba18c0, pid: 6827, label: 'Settings'
+  }
+  ↪︎Find: Children matching type Any
+    Output: {
+      Window (Main), 0x7fa9f46eb060, {{0.0, 0.0}, {414.0, 896.0}}
+      Window, 0x7fa9f37aae30, {{0.0, 0.0}, {414.0, 896.0}}
+    }
+    ↪︎Find: Identity Binding
+      Output: {
+        Window (Main), 0x7fa9f37a5310, {{0.0, 0.0}, {414.0, 896.0}}
+      }
+
+
+Attributes: Window, 0x7fa9f37c5570, {{0.0, 0.0}, {414.0, 896.0}}
+Element subtree:
+ →Window, 0x7fa9f37c5570, {{0.0, 0.0}, {414.0, 896.0}}
+    Other, 0x7fa9f37c5680, {{0.0, 0.0}, {414.0, 896.0}}
+      Other, 0x7fa9f37c5790, {{0.0, 0.0}, {414.0, 896.0}}
+Path to element:
+ →Application, 0x7fa9f37b0000, pid: 6827, label: 'Settings'
+  ↳Window, 0x7fa9f37c5570, {{0.0, 0.0}, {414.0, 896.0}}
+Query chain:
+ →Find: Application 'com.apple.Preferences'
+  Output: {
+    Application, 0x7fa9f5d07f50, pid: 6827, label: 'Settings'
+  }
+  ↪︎Find: Children matching type Any
+    Output: {
+      Window (Main), 0x7fa9f37c7900, {{0.0, 0.0}, {414.0, 896.0}}
+      Window, 0x7fa9f5f27c60, {{0.0, 0.0}, {414.0, 896.0}}
+    }
+    ↪︎Find: Identity Binding
+      Output: {
+        Window, 0x7fa9f5f18ca0, {{0.0, 0.0}, {414.0, 896.0}}
+      }
+
 </pre>
 </span>
 </div>
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>led 06, 2022 5:53:19 ODP. io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+<pre>led 08, 2022 9:26:06 ODP. io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-led 06, 2022 5:53:23 ODP. io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+led 08, 2022 9:26:10 ODP. io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-led 06, 2022 5:53:37 ODP. io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+led 08, 2022 9:26:21 ODP. io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+led 08, 2022 9:26:23 ODP. io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 </pre>
 </span>
@@ -124,7 +395,7 @@ INFO: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.2</a> at 6. 1. 2022 17:53:37</p>
+<a href="http://www.gradle.org">Gradle 7.2</a> at 8. 1. 2022 21:26:25</p>
 </div>
 </div>
 </body>
