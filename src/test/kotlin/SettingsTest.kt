@@ -197,34 +197,7 @@ class SettingsTestClass {
             ElementTree.addChild(WindowNode2)
 
             println(ElementTree)
-            //println(ElementTree.children.count())
-        /*
-            val milkTree = TreeNode<String>( "Milk")
-            val beveragesNode = TreeNode<String>( "Beverages")
-            val curdNode = TreeNode<String>( "Curd")
-            milkTree.addChild(beveragesNode)
-            milkTree.addChild(curdNode)
 
-            val teaNode = TreeNode<String>( "tea")
-            val coffeeNode = TreeNode<String>( "coffee")
-            val milkShakeNode = TreeNode<String>( "Milk Shake")
-            beveragesNode.addChild(teaNode)
-            beveragesNode.addChild(coffeeNode)
-            beveragesNode.addChild(milkShakeNode)
-
-            val gingerTeaNode = TreeNode<String>( "ginger tea")
-            val normalTeaNode = TreeNode<String>( "normal tea")
-            teaNode.addChild(gingerTeaNode)
-            teaNode.addChild(normalTeaNode)
-
-            val yogurtNode = TreeNode<String>( "yogurt")
-            val lassiNode = TreeNode<String>( "lassi")
-            curdNode.addChild(yogurtNode)
-            curdNode.addChild(lassiNode)
-
-            println(milkTree)
-
-             */
         }
         createElementList()
     }
