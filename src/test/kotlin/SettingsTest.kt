@@ -111,14 +111,122 @@ class SettingsTestClass {
 
     @Test
     fun testC() {
+        //val el0 = driver!!.findElementByAccessibilityId("General") as MobileElement
+        //el0.click()
         val el1 = driver!!.findElementByAccessibilityId("Dictionary") as MobileElement
         el1.click()
-    }
 
-    @Test
-    fun testD() {
-        val myList = driver!!.executeScript("mobile: source", ImmutableMap.of("format", "description"))
-        System.out.println(myList)
+
+
+        //val myList = driver!!.executeScript("mobile: source", ImmutableMap.of("format", "description"))
+        //System.out.println(myList)
+
+        class TreeNode<T>(value:T){
+            var value:T = value
+            var parent:TreeNode<T>? = null
+
+            var children:MutableList<TreeNode<T>> = mutableListOf()
+
+            fun addChild(node:TreeNode<T>){
+                children.add(node)
+                node.parent = this
+            }
+            override fun toString(): String {
+                var s = "${value}"
+                if (!children.isEmpty()) {
+                    s += " {" + children.map { it.toString() } + " }"
+                }
+                return s
+            }
+        }
+        fun createElementList() {
+
+            val ElementTree = TreeNode<MobileElement>(driver!!.findElementByAccessibilityId("Settings") as MobileElement)
+            val WindowNode1 = TreeNode<MobileElement>(driver!!.findElementByXPath("//XCUIElementTypeApplication[@name=\"Settings\"]/XCUIElementTypeWindow[1]") as MobileElement)
+
+            ElementTree.addChild(WindowNode1)
+
+            val Other1 = TreeNode<MobileElement>(driver!!.findElementByXPath("//XCUIElementTypeApplication[@name=\"Settings\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther") as MobileElement)
+            WindowNode1.addChild((Other1))
+
+            val Other2 = TreeNode<MobileElement>(driver!!.findElementByXPath("//XCUIElementTypeApplication[@name=\"Settings\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther") as MobileElement)
+            Other1.addChild(Other2)
+
+            val Other3 = TreeNode<MobileElement>(driver!!.findElementByXPath("//XCUIElementTypeApplication[@name=\"Settings\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther\n") as MobileElement)
+            Other2.addChild(Other3)
+
+            val Other4 = TreeNode<MobileElement>(driver!!.findElementByXPath("//XCUIElementTypeApplication[@name=\"Settings\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther\n") as MobileElement)
+            Other3.addChild((Other4))
+
+            val NavigationBar = TreeNode<MobileElement>(driver!!.findElementByXPath("//XCUIElementTypeNavigationBar[@name=\"Dictionary\"]\n") as MobileElement)
+            Other4.addChild(NavigationBar)
+
+            val NavButton = TreeNode<MobileElement>(driver!!.findElementByXPath("//XCUIElementTypeButton[@name=\"General\"]\n")as MobileElement)
+            val NavText = TreeNode<MobileElement>(driver!!.findElementByXPath("//XCUIElementTypeStaticText[@name=\"Dictionary\"]\n") as MobileElement)
+            NavigationBar.addChild(NavButton)
+            NavigationBar.addChild(NavText)
+
+            val Other5 = TreeNode<MobileElement>(driver!!.findElementByXPath("//XCUIElementTypeApplication[@name=\"Settings\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther\n")as MobileElement)
+            Other4.addChild(Other5)
+
+            val Other6 = TreeNode<MobileElement>(driver!!.findElementByXPath("//XCUIElementTypeApplication[@name=\"Settings\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther\n")as MobileElement)
+            Other5.addChild(Other6)
+
+            val Other7 = TreeNode<MobileElement>(driver!!.findElementByXPath("//XCUIElementTypeApplication[@name=\"Settings\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther\n")as MobileElement)
+            Other6.addChild(Other7)
+
+            val Other8 = TreeNode<MobileElement>(driver!!.findElementByXPath("//XCUIElementTypeApplication[@name=\"Settings\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther\n")as MobileElement)
+            Other7.addChild(Other8)
+
+            val Other9 = TreeNode<MobileElement>(driver!!.findElementByXPath("//XCUIElementTypeApplication[@name=\"Settings\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther\n") as MobileElement)
+            Other8.addChild(Other9)
+
+            val Other10 = TreeNode<MobileElement>(driver!!.findElementByXPath("//XCUIElementTypeApplication[@name=\"Settings\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther\n")as MobileElement)
+            Other9.addChild(Other10)
+
+            val Table = TreeNode<MobileElement>(driver!!.findElementByXPath("//XCUIElementTypeApplication[@name=\"Settings\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable\n") as MobileElement)
+            Other10.addChild(Table)
+
+            val Cells = driver!!.findElementsByXPath("//XCUIElementTypeCell") as List<MobileElement>
+
+
+
+            val WindowNode2 = TreeNode<MobileElement>(driver!!.findElementByXPath("//XCUIElementTypeApplication[@name=\"Settings\"]/XCUIElementTypeWindow[2]") as MobileElement)
+
+
+            ElementTree.addChild(WindowNode2)
+
+            println(ElementTree)
+            //println(ElementTree.children.count())
+        /*
+            val milkTree = TreeNode<String>( "Milk")
+            val beveragesNode = TreeNode<String>( "Beverages")
+            val curdNode = TreeNode<String>( "Curd")
+            milkTree.addChild(beveragesNode)
+            milkTree.addChild(curdNode)
+
+            val teaNode = TreeNode<String>( "tea")
+            val coffeeNode = TreeNode<String>( "coffee")
+            val milkShakeNode = TreeNode<String>( "Milk Shake")
+            beveragesNode.addChild(teaNode)
+            beveragesNode.addChild(coffeeNode)
+            beveragesNode.addChild(milkShakeNode)
+
+            val gingerTeaNode = TreeNode<String>( "ginger tea")
+            val normalTeaNode = TreeNode<String>( "normal tea")
+            teaNode.addChild(gingerTeaNode)
+            teaNode.addChild(normalTeaNode)
+
+            val yogurtNode = TreeNode<String>( "yogurt")
+            val lassiNode = TreeNode<String>( "lassi")
+            curdNode.addChild(yogurtNode)
+            curdNode.addChild(lassiNode)
+
+            println(milkTree)
+
+             */
+        }
+        createElementList()
     }
 
     companion object {
