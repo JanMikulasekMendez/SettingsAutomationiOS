@@ -1,6 +1,6 @@
-import com.google.common.collect.ImmutableMap
 import io.appium.java_client.MobileElement
 import io.appium.java_client.ios.IOSDriver
+import io.appium.java_client.windows.WindowsElement
 import junit.framework.TestCase.assertEquals
 import org.junit.After
 import org.junit.Before
@@ -63,6 +63,8 @@ class SettingsTestClass {
     @Test
     fun testB() {
 
+
+
         val el0 = driver!!.findElementByXPath("//XCUIElementTypeSwitch[@name=\"Auto-Capitalization\"]") as MobileElement
         el0.click()
         val el1 = driver!!.findElementByXPath("//XCUIElementTypeSwitch[@name=\"Auto-Correction\"]") as MobileElement
@@ -90,6 +92,8 @@ class SettingsTestClass {
 
         val el10 = driver!!.findElementByXPath("//XCUIElementTypeSwitch[@name=\"Memoji Stickers\"]") as MobileElement
         el10.click()
+
+
 
         fun el9a() {
             val wait = WebDriverWait(driver, 2)
