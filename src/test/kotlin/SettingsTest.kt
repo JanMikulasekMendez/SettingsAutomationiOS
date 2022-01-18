@@ -64,44 +64,10 @@ class SettingsTestClass {
     @Test
     fun testB() {
 
-        var elementsClicked = 0
-        var clickedElements = mutableListOf<String>()
-
-        fun getXpathElement() {
-
-        }
-
-        for(i in 0..1000) {
-
-            var elList = driver!!.findElementsByXPath("//XCUIElementTypeSwitch")
-            for(i in 0..elList.count()) {
-                var refreshedList = driver!!.findElementsByXPath("//XCUIElementTypeSwitch")
-                if (clickedElements.contains(refreshedList[i].getAttribute("name"))) {
-                    return
-                }
-                else {
-                    refreshedList = driver!!.findElementsByXPath("//XCUIElementTypeSwitch")
-                    clickedElements.add(refreshedList[i].getAttribute("name"))
-                    refreshedList[i].click()
-                    elementsClicked += 1
-
-                    if (refreshedList[i].getAttribute("name") == "Enable Dictation") {
-                        driver!!.switchTo().alert().accept()
-                    }
-                }
-
-                if (driver!!.findElementsByXPath("//XCUIElementTypeSwitch").count() == elementsClicked) {
-                    break
-                }
-            }
-
-
-        }
 
 
 
 
-/*
         val el0 = driver!!.findElementByXPath("//XCUIElementTypeSwitch[@name=\"Auto-Capitalization\"]") as MobileElement
         el0.click()
         val el1 = driver!!.findElementByXPath("//XCUIElementTypeSwitch[@name=\"Auto-Correction\"]") as MobileElement
@@ -147,7 +113,7 @@ class SettingsTestClass {
         el9a()
 
 
- */
+
         driver!!.navigate().back()
 
         assertEquals(1, 1)
