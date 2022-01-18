@@ -110,6 +110,13 @@ class SettingsTestClassDictionary {
         //System.out.println(ElementTree)
     }
 
+    @Test
+    fun test03() {
+        driver!!.navigate().back()
+        val checkElement = driver!!.findElementByIosClassChain("**/XCUIElementTypeStaticText").getAttribute("name")
+        assertEquals("General", checkElement)
+    }
+
     companion object {
         private var firstTest: Boolean = true
     }
