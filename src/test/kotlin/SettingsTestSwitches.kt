@@ -14,7 +14,7 @@ import java.io.IOException
 import java.net.URL
 
 
-class SettingsTestClassSecond {
+class SettingsTestClassSwitches {
 
     private var driver: IOSDriver<*>? = null
 
@@ -50,8 +50,9 @@ class SettingsTestClassSecond {
 
     }
 
+    //Open Keyboards Screen
     @Test
-    fun testA() {
+    fun test01() {
 
         val el0 = driver!!.findElementByAccessibilityId("General")
         el0.click()
@@ -62,8 +63,9 @@ class SettingsTestClassSecond {
         assertEquals("Keyboards", checkElement)
     }
 
+    //Flip all Switches in KB screen
     @Test
-    fun testB() {
+    fun test02() {
 
         val possibleExtraClicks = 1
         var finalClicks = 0
@@ -108,6 +110,14 @@ class SettingsTestClassSecond {
         }
         System.out.println("Clicked int ${clickedListNames.count()} Names, List of names : $clickedListNames")
         Assert.assertTrue(clickedListNames.count() == finalClicks)
+    }
+
+    //Navigate to Dictionary Screen
+    @Test
+    fun test03() {
+        driver!!.navigate().back()
+        val checkElement = driver!!.findElementByIosClassChain("**/XCUIElementTypeStaticText").getAttribute("name")
+        assertEquals("General", checkElement)
     }
 
     companion object {
