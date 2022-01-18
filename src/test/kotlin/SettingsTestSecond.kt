@@ -2,6 +2,7 @@ import io.appium.java_client.MobileElement
 import io.appium.java_client.ios.IOSDriver
 import junit.framework.TestCase.assertEquals
 import org.junit.After
+import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
 import org.openqa.selenium.By
@@ -65,6 +66,7 @@ class SettingsTestClassSecond {
     fun testB() {
 
         val possibleExtraClicks = 1
+        var finalClicks = 0
 
         var clickedListNames = mutableListOf<String>()
         for (i in 0..possibleExtraClicks) {
@@ -75,6 +77,7 @@ class SettingsTestClassSecond {
             }
 
             for (name in namesToClick) {
+                finalClicks = namesToClick.count()
                 if (clickedListNames.contains(name)) {
                     System.out.println("Name already found $name")
                 }
@@ -93,6 +96,7 @@ class SettingsTestClassSecond {
                         clickedListNames.add(toClick.getAttribute("name"))
                         toClick.click()
 
+
                         toClick = driver!!.findElementByXPath("//XCUIElementTypeSwitch[@name=\"$name\"]")
                         if (toClick.getAttribute("name") == "Enable Dictation") {
                             driver!!.switchTo().alert().accept()
@@ -103,6 +107,7 @@ class SettingsTestClassSecond {
             }
         }
         System.out.println("Clicked int ${clickedListNames.count()} Names, List of names : $clickedListNames")
+        Assert.assertTrue(clickedListNames.count() == finalClicks)
     }
 
     companion object {
